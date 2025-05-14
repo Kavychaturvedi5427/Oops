@@ -9,7 +9,5 @@ public class Main {
         Choice2 c2=new Choice2();
         c2.EnterChoice("Fastrack");
         c2.EnterBudgetAndtype("Formal wear", 10000);
-
-        
     }
 }
