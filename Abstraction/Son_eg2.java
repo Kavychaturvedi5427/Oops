@@ -4,6 +4,7 @@ public class Son_eg2 extends Parent_Eg2 {
 
     public Son_eg2(int age) {
         super(age);
+        super.hello();
     }
 
     @Override
@@ -21,5 +22,4 @@ public class Son_eg2 extends Parent_Eg2 {
     public static void main(String[] args) {
         hello();    // static method of the parent class.
     }
-
 }
