@@ -3,6 +3,8 @@ package Oops;
 import java.util.Scanner;
 
 class StudentInfo {
+
+    // These are the attributes for the class.
     String Name;
     int rollnum;
     String Address;
