@@ -2,18 +2,27 @@ package Oops.Interfaces;
 
 public class Main {
     public static void main(String[] args) {
-        Car car=new Car();  // the car will have methods of Car() but it have only access to the ones present in Car
-        Media car1=new Car();  // the car will have methods of Car() but it have only access to the ones present in Car
+        // Car car=new Car();  // the car will have methods of Car() but it have only access to the ones present in Car
+        // Media car1=new Car();  // the car will have methods of Car() but it have only access to the ones present in Car
 
-        car.start();
-        car.acc();
-        car.brake();
+        // car.start();
+        // car.acc();
+        // car.brake();
         
-        car1.start();
-        // car1.acc(); car1 have no access to the acc method as the reference type belongs to Media type...
+        // car1.start();
+        // // car1.acc(); car1 have no access to the acc method as the reference type belongs to Media type...
 
-        // since we have start and stop in both engine and media interface and we're overriding it in Car class so if we create a refernce type of Media and the object of Car() type and then we call the start and stop function , althought the instance will've access to start() and stop() of the media one but it's being overriden in Car() class so it will be the one which is called
+        // // since we have start and stop in both engine and media interface and we're overriding it in Car class so if we create a refernce type of Media and the object of Car() type and then we call the start and stop function , althought the instance will've access to start() and stop() of the media one but it's being overriden in Car() class so it will be the one which is called
 
-        
+        // // this can be overcome by creating separate class implementing each interface....
+
+        NewCar car1=new NewCar(new PowerEngine());
+        ElectricEngine engine1=new ElectricEngine();
+        car1.Start();
+        car1.Mediastart();
+        car1.UpgradeEngine(engine1); 
+        car1.Start();
+        car1.Mediastart();
+
     }
 }

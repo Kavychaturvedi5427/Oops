@@ -17,7 +17,4 @@ public class Choice1 extends Carchoice{
         System.out.printf("And in that brand he is looking a vehicle of %s type under the budget of %d.",Type,budget);
         
     }
-
-    public static void main(String[] args) {
-    }
 }
