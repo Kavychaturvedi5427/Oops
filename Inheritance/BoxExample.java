@@ -3,9 +3,9 @@ package Oops.Inheritance;
 public class BoxExample {
     // private double l; here it's declared as private we'll not be able to access
     // it
-    double l;
-    double w;
-    double h;
+    double l;    // this is for length. 
+    double w;    // this is for width.
+    double h;    // this is for height.
 
     public BoxExample() {
         this.l = -1;
